@@ -12,11 +12,11 @@ const pokemonData = {
 
   "001": {
 
-  name: "リザードン",
+    name: "リザードン",
 
-  image: "images/001.png",
+    image: "images/001.png",
 
-  hp: 180,
+    hp: 180,
 
     attack: 150,
 
@@ -33,7 +33,7 @@ const pokemonData = {
 
     name: "カメックス",
 
-    emoji: "💧",
+    image: "images/002.png",
 
     hp: 170,
 
@@ -52,7 +52,7 @@ const pokemonData = {
 
     name: "フシギバナ",
 
-    emoji: "🌿",
+    image: "images/003.png",
 
     hp: 190,
 
@@ -71,7 +71,7 @@ const pokemonData = {
 
     name: "ピカチュウ",
 
-    emoji: "⚡",
+    image: "images/004.png",
 
     hp: 120,
 
@@ -90,7 +90,7 @@ const pokemonData = {
 
     name: "レックウザ",
 
-    emoji: "🐉",
+    image: "images/005.png",
 
     hp: 200,
 
