@@ -253,9 +253,14 @@ function showPokemon() {
 
 
   document.getElementById(
-    "pokemon-emoji"
-  ).textContent =
-    currentPokemon.emoji;
+    "pokemon-image"
+  ).src =
+    currentPokemon.image;
+
+  document.getElementById(
+    "pokemon-image"
+    ).alt =
+    currentPokemon.name;
 
 
   document.getElementById(
