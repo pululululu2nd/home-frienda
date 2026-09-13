@@ -157,9 +157,23 @@ header p {
 
 .pokemon-card .emoji {
 
-  font-size: 60px;
+  width: 110px;
+  height: 110px;
 
-  margin-bottom: 5px;
+  margin: 0 auto 5px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-card .emoji img {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
 }
 
 
