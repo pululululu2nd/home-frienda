@@ -12,11 +12,11 @@ const pokemonData = {
 
   "001": {
 
-    name: "リザードン",
+  name: "リザードン",
 
-    emoji: "🔥",
+  image: "images/001.png",
 
-    hp: 180,
+  hp: 180,
 
     attack: 150,
 
