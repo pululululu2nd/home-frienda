@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>自宅フレンダ</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- QRコード読み取りライブラリ -->
+  <script src="https://unpkg.com/html5-qrcode" defer></script>
+
+  <script src="game.js" defer></script>
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header>
+      <h1>⚡ 自宅フレンダ</h1>
+      <p>ピックを読み取ってバトルしよう！</p>
+    </header>
+
+    <!-- QR読み取り -->
+    <section id="scanner-section" class="card">
+
+      <h2>📷 ピックを読み取る</h2>
+
+      <div id="reader"></div>
+
+      <p id="scan-message">
+        QRコードをカメラに映してください
+      </p>
+
+    </section>
+
+
+    <!-- ポケモン表示 -->
+    <section id="pokemon-section" class="card hidden">
+
+      <div class="pokemon-image">
+
+        <div id="pokemon-emoji">
+          🔥
+        </div>
+
+      </div>
+
+      <h2 id="pokemon-name">
+        リザードン
+      </h2>
+
+      <p id="pokemon-id">
+        PICK ID: 001
+      </p>
+
+
+      <div class="stats">
+
+        <div>
+          <span>HP</span>
+          <strong id="hp">180</strong>
+        </div>
+
+        <div>
+          <span>こうげき</span>
+          <strong id="attack">150</strong>
+        </div>
+
+        <div>
+          <span>ぼうぎょ</span>
+          <strong id="defense">120</strong>
+        </div>
+
+        <div>
+          <span>すばやさ</span>
+          <strong id="speed">4</strong>
+        </div>
+
+      </div>
+
+
+      <button id="battle-button">
+        ⚔️ バトルする！
+      </button>
+
+      <button id="scan-again-button" class="secondary">
+        📷 別のピックを読む
+      </button>
+
+    </section>
+
+
+    <!-- バトル画面 -->
+    <section id="battle-section" class="card hidden">
+
+      <h2>⚔️ バトル！</h2>
+
+      <div class="battle-area">
+
+        <div class="fighter">
+
+          <div id="player-emoji">
+            🔥
+          </div>
+
+          <h3 id="player-name">
+            リザードン
+          </h3>
+
+          <div class="hp-bar">
+            <div id="player-hp-bar"></div>
+          </div>
+
+          <p>
+            HP:
+            <span id="player-hp">180</span>
+          </p>
+
+        </div>
+
+
+        <div class="vs">
+          VS
+        </div>
+
+
+        <div class="fighter">
+
+          <div id="enemy-emoji">
+            💧
+          </div>
+
+          <h3 id="enemy-name">
+            カメックス
+          </h3>
+
+          <div class="hp-bar">
+            <div id="enemy-hp-bar"></div>
+          </div>
+
+          <p>
+            HP:
+            <span id="enemy-hp">170</span>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="battle-log" id="battle-log">
+        バトル開始！
+      </div>
+
+
+      <button id="attack-button">
+        👊 こうげき
+      </button>
+
+      <button id="back-button" class="secondary">
+        ← 戻る
+      </button>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
