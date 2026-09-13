@@ -371,9 +371,9 @@ function startBattle() {
 
   // 表示
   document.getElementById(
-    "player-emoji"
-  ).textContent =
-    currentPokemon.emoji;
+    "player-image"
+  ).src =
+    currentPokemon.image;
 
 
   document.getElementById(
@@ -389,9 +389,9 @@ function startBattle() {
 
 
   document.getElementById(
-    "enemy-emoji"
-  ).textContent =
-    enemyPokemon.emoji;
+    "enemy-image"
+  ).src =
+    enemyPokemon.image;
 
 
   document.getElementById(
