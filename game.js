@@ -178,8 +178,9 @@ function createPokemonList() {
     card.innerHTML = `
 
       <div class="emoji">
-        ${pokemon.emoji}
-      </div>
+  <img src="${pokemon.image}"
+       alt="${pokemon.name}">
+</div>
 
       <div class="name">
         ${pokemon.name}
