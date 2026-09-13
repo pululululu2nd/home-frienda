@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>自宅フレンダ</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+
+<body>
+
+<main class="app">
+
+  <header>
+    <h1>⚡ 自宅フレンダ</h1>
+    <p>好きなポケモンを選んでバトル！</p>
+  </header>
+
+
+  <!-- =========================
+       ピック選択
+  ========================== -->
+
+  <section id="select-section" class="card">
+
+    <h2>🎴 ピックを選ぶ</h2>
+
+    <p class="instruction">
+      バトルで使うポケモンを選んでください
+    </p>
+
+    <div id="pokemon-list" class="pokemon-list">
+      <!-- JavaScriptで自動生成 -->
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ポケモン詳細
+  ========================== -->
+
+  <section id="pokemon-section"
+           class="card hidden">
+
+    <div class="pokemon-image">
+      <div id="pokemon-emoji">🔥</div>
+    </div>
+
+    <h2 id="pokemon-name">リザードン</h2>
+
+    <p id="pokemon-id">PICK ID: 001</p>
+
+    <div class="type">
+      <span id="pokemon-type">ほのお</span>
+    </div>
+
+
+    <div class="stats">
+
+      <div>
+        <span>HP</span>
+        <strong id="hp">180</strong>
+      </div>
+
+      <div>
+        <span>こうげき</span>
+        <strong id="attack">150</strong>
+      </div>
+
+      <div>
+        <span>ぼうぎょ</span>
+        <strong id="defense">120</strong>
+      </div>
+
+      <div>
+        <span>すばやさ</span>
+        <strong id="speed">4</strong>
+      </div>
+
+    </div>
+
+
+    <button id="battle-button">
+      ⚔️ このポケモンでバトル！
+    </button>
+
+    <button id="change-button"
+            class="secondary">
+      ← ポケモンを選び直す
+    </button>
+
+  </section>
+
+
+  <!-- =========================
+       バトル
+  ========================== -->
+
+  <section id="battle-section"
+           class="card hidden">
+
+    <h2>⚔️ バトル！</h2>
+
+
+    <div class="battle-area">
+
+      <!-- プレイヤー -->
+
+      <div class="fighter player">
+
+        <div class="fighter-emoji"
+             id="player-emoji">
+          🔥
+        </div>
+
+        <h3 id="player-name">
+          リザードン
+        </h3>
+
+        <div class="hp-label">
+          HP
+        </div>
+
+        <div class="hp-bar">
+          <div id="player-hp-bar"></div>
+        </div>
+
+        <p>
+          <span id="player-hp">180</span>
+          /
+          <span id="player-max-hp">180</span>
+        </p>
+
+      </div>
+
+
+      <div class="vs">
+        VS
+      </div>
+
+
+      <!-- CPU -->
+
+      <div class="fighter enemy">
+
+        <div class="fighter-emoji"
+             id="enemy-emoji">
+          💧
+        </div>
+
+        <h3 id="enemy-name">
+          カメックス
+        </h3>
+
+        <div class="hp-label">
+          HP
+        </div>
+
+        <div class="hp-bar">
+          <div id="enemy-hp-bar"></div>
+        </div>
+
+        <p>
+          <span id="enemy-hp">170</span>
+          /
+          <span id="enemy-max-hp">170</span>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div id="battle-log"
+         class="battle-log">
+      バトル開始！
+    </div>
+
+
+    <button id="attack-button">
+      👊 こうげき
+    </button>
+
+
+    <button id="back-to-select"
+            class="secondary">
+      🎴 ポケモンを選び直す
+    </button>
+
+  </section>
+
+</main>
+
+</body>
+</html>
